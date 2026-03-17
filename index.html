@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>名韋油封 | 名韋企業社 | 油封/O型環/電木/耐磨片/鐵氟龍訂製</title>
+
+<meta name="description" content="名韋油封位在彰化秀水，主要業務為油封及油壓相關零件之買賣，販售產品種類多元，包括油壓油封、空壓油封、防塵油封、鐵氟龍墊片、O型環等產品，以最齊全的產品及專業的知識來解決顧客的問題。">
+
+<meta name="keywords" content="名韋油封, 名韋企業社, 彰化油封, 油封, O型環, 電木, 耐磨片, 鐵氟龍, 機械零件, NOK,VALQUA,Hallite,SAKAGAMI阪上,骨架旋轉油封,橡膠, 堆高機, 怪手, 吊車, 山貓, 高空車, 機械, 工業, 油壓">
+
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="shortcut icon" href="logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="alternate" hreflang="zh-Hant" href="https://yinxin.github.io/" />
+<link rel="alternate" hreflang="en" href="https://yinxin.github.io/en/index.html" />
+<link rel="alternate" hreflang="x-default" href="https://yinxin.github.io/en/index.html" />
+
+    <style>
+        /* ==========================================================================
+           1. 核心變數與基礎設定 (100% 沿用原版)
+           ========================================================================== */
+        :root {
+    /* MW Brand Colors */
+    --primary-color: #2F7FBF;        /* 主品牌藍 */
+    --primary-dark: #245E9C;         /* Hover / 深藍 */
+    --secondary-color: #6B6FAF;      /* 紫灰藍 */
+
+    --bg-dark: #0F1C2E;
+    --bg-dark-gradient: linear-gradient(
+        135deg,
+        #0F1C2E 0%,
+        #1E3A5F 100%
+    );
+
+    --bg-light: #ffffff;
+
+    --text-on-light: #2A3B4C;
+    --text-dim-on-light: #50657B;
+    --text-on-dark: #B8C7D9;
+
+    --hover-glow-light: 0 15px 35px rgba(47, 127, 191, 0.25);
+}
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+        body { 
+            font-family: 'Noto Sans TC', sans-serif; line-height: 1.6; color: var(--text-on-light); background-color: var(--bg-light);
+            background-image: linear-gradient(45deg, transparent 49%, rgba(58, 109, 194, 0.08) 49%, rgba(58, 109, 194, 0.08) 51%, transparent 51%),
+                              linear-gradient(-45deg, transparent 49%, rgba(58, 109, 194, 0.08) 49%, rgba(58, 109, 194, 0.08) 51%, transparent 51%);
+            background-size: 100px 100px; background-attachment: fixed; font-weight: 500;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 2; }
+
+        /* Header (參照圖片 image_ac9825.png) */
+        header {
+  background: rgba(238, 242, 247, 0.92); /* #EEF2F7 */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(15, 28, 46, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 6px 30px rgba(15, 28, 46, 0.08);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+  text-decoration: none;
+}
+
+.logo img {
+  max-height: 110px;
+  margin-right: -15px;
+}
+
+.logo span {
+  font-weight: 900;
+  font-size: 28px;
+  color: #1f2937; /* 深藍灰，取代白色 */
+  text-shadow: none;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.nav-menu a {
+  font-weight: 700;
+  color: #334155; /* 深灰藍，清楚但不死黑 */
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--primary-color);
+}
+
+.cta-btn {
+  background: var(--primary-color);
+  color: white !important;
+  padding: 10px 28px;
+  border-radius: 50px;
+  font-weight: 900;
+  box-shadow: 0 4px 15px rgba(58, 109, 194, 0.35);
+  border: none;
+}
+/* 語言切換按鈕樣式 */
+        .lang-btn {
+	    background: rgba(127, 174, 214, 0.18); 
+            border: 1px solid rgba(127,174,214,0.35); 
+            padding: 5px 15px !important; 
+            border-radius: 4px; 
+            font-size: 15px !important; 
+            color: #1f2937 !important;
+            transition: 0.3s;
+            text-decoration: none; /* 確保沒有底線 */
+            margin-right: 15px; /* 增加一點右邊距，跟 LINE 按鈕隔開 */
+        }
+        .lang-btn:hover {
+            background: rgba(127,174,214,0.28);
+            border-color: #7faed6;
+	    color: #1f2937;
+        }
+
+        .page-content { display: none; }
+        .page-content.active { display: block; }
+
+        /* Hero 與首頁按鈕間距修正 */
+        .hero { padding: 170px 0 150px; text-align: center; color: #fff; background-size: cover; background-position: center; }
+        .hero h1 { font-size: 56px; font-weight: 900; text-shadow: 0 2px 15px rgba(0,0,0,0.7); margin-bottom: 25px; }
+        .hero p { font-size: 24px; font-weight: 700; text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
+
+        .home-btn-group { margin-top: 150px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        .hero-btn { background-color: var(--primary-color); color: #ffffff; padding: 18px 55px; font-size: 20px; border-radius: 6px; font-weight: 900; cursor: pointer; border: none; box-shadow: 0 10px 25px rgba(58, 109, 194, 0.4); transition: 0.3s; }
+        .hero-btn:hover { background-color: var(--primary-dark); transform: translateY(-3px); }
+
+        /* 產品展示設計 (參照圖片 image_ac985a.png) */
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 40px; margin-top: 40px; }
+        .product-card { background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #e1e8f0; transition: 0.4s; cursor: pointer; position: relative; }
+        .product-card::before, .product-card::after { content: ''; position: absolute; width: 20px; height: 20px; border-color: var(--primary-color); transition: 0.4s; opacity: 0.3; }
+        .product-card::before { top: 0; left: 0; border-top: 3px solid; border-left: 3px solid; }
+        .product-card::after { bottom: 0; right: 0; border-bottom: 3px solid; border-right: 3px solid; }
+        .product-card:hover::before, .product-card:hover::after { width: 100%; height: 100%; opacity: 1; border-width: 1px; z-index: 10; }
+        .product-card:hover { transform: translateY(-10px); box-shadow: var(--hover-glow-light); }
+        .card-img { height: 260px; padding: 30px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #f0f0f0; background: #fff; }
+        .card-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        .card-content { padding: 25px; text-align: center; }
+        .card-content h3 { font-size: 22px; font-weight: 900; color: #222; }
+
+        .detail-section { padding: 80px 0; border-top: 1px dashed rgba(58, 109, 194, 0.3); }
+        .detail-header { margin-bottom: 40px; border-left: 6px solid var(--primary-color); padding-left: 20px; }
+        .items-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 30px; }
+        .item-card { background: #fff; border: 1px solid #eef2f7; border-radius: 8px; padding: 20px; text-align: center; transition: 0.3s; cursor: pointer; position: relative; overflow: hidden; }
+        .item-card img { height: 160px; width: 100%; object-fit: contain; margin-bottom: 15px; }
+        .item-desc { font-size: 14px; color: var(--text-dim-on-light); background: #f8fbff; padding: 8px; border-radius: 4px; font-weight: 700; }
+        .item-card::after { content: '🔍 點擊查看尺寸'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.7); color: #fff; padding: 8px 15px; border-radius: 20px; opacity: 0; transition: 0.3s; pointer-events: none; font-weight: bold; font-size: 14px; }
+        .item-card:hover::after { opacity: 1; }
+
+        /* 右側導覽選單 (Side Nav) */
+        .side-nav { position: fixed; left: 20px; top: 120px !important; z-index: 9000; display: flex; flex-direction: column; gap: 4px; background: rgba(255, 255, 255, 0.95); padding: 15px 10px; border-radius: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.15); opacity: 0; visibility: hidden; transition: 0.5s; }
+        .side-nav a { display: block; padding: 10px 18px; font-size: 15px; color: #50657b; font-weight: 900; text-align: center; border-radius: 15px; white-space: nowrap; text-decoration: none; }
+        .side-nav a:hover { background-color: var(--primary-color); color: #fff; transform: translateX(10px); }
+/*@media (max-width: 1024px) {
+    .side-nav {
+        display: none;
+    }
+} 之後檢查手機板有無改進*/
+
+        /* 懸浮聯絡工具 (依照 ac97e1.png) */
+        .floating-contact-bar { position: fixed; right: 20px; bottom: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 15px; align-items: center; opacity: 0; visibility: hidden; transition: 0.5s; transform: translateX(20px); }
+        .show-floating-ui .side-nav, .show-floating-ui .floating-contact-bar { opacity: 1; visibility: visible; transform: translateX(0); }
+        .float-btn { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.25); transition: 0.3s; position: relative; text-decoration: none; }
+        .float-btn svg { width: 30px; height: 30px; fill: white; }
+        .btn-phone { background: linear-gradient(135deg, #3a6dc2, #2a5296); }
+        .btn-mail { background: linear-gradient(135deg, #ea4335, #c5221f); }
+        .btn-line { background: linear-gradient(135deg, #06C755, #00b900); }
+
+        /* 頁尾 (參照圖片 ad10c0.jpg / ac97c1.png) */
+        footer {
+  background: linear-gradient(
+    180deg,
+    rgba(238, 242, 247, 0.95),
+    rgba(238, 242, 247, 1)
+  );
+  color: #334155;
+  padding: 90px 0 40px;
+  font-size: 18px;
+  margin-top: 80px;
+  border-top: 1px solid rgba(15, 28, 46, 0.08);
+}
+        .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.footer-brand img {
+  height: 60px;
+}
+
+.footer-brand h3 {
+  color: #1f2937;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+}
+        .footer-col h3.simple-title {
+  color: #1f2937;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 900;
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.contact-info li {
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+        .footer-links a {
+  display: block;
+  margin-bottom: 12px;
+  color: #475569;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+  padding-left: 5px;
+}
+        .copyright {
+  text-align: center;
+  border-top: 1px solid rgba(15, 28, 46, 0.08);
+  padding-top: 30px;
+  margin-top: 60px;
+  font-size: 15px;
+  color: #64748b;
+}
+
+        .modal { display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); align-items: center; justify-content: center; }
+        .modal.show { display: flex; opacity: 1; }
+        .modal-content { position: relative; background: #fff; padding: 10px; border-radius: 8px; max-width: 90%; max-height: 90%; }
+        .close-btn { position: absolute; top: -40px; right: 0; color: #fff; font-size: 35px; cursor: pointer; }
+
+/* 1. 定義動畫：從透明到完全顯示 */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 2. 套用到你的 .hero 區塊 */
+.hero {
+    animation: fadeIn 2s ease-in; /* 2秒淡入，感覺更平滑 */
+}
+
+        /* 修正後的專用手機版樣式 (包含標頭修復與底部按鈕保留) */
+@media (max-width: 768px) {
+    /* 1. 標頭與導覽列：改為上下排列，高度自動 */
+    .header-inner {
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 15px 0;
+        gap: 10px;
+    }
+
+    /* 2. 標誌與字體：縮小避免重疊 */
+    .logo img {
+        max-height: 40px !important;
+        margin-right: 10px !important;
+    }
+    .logo span {
+        font-size: 20px !important;
+    }
+
+    /* 3. 選單按鈕：平均分佈，不擠在一起 */
+    .nav-menu {
+        gap: 10px !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-menu a {
+        font-size: 15px !important;
+        padding: 5px 8px;
+    }
+    .cta-btn {
+        padding: 8px 15px !important;
+        font-size: 15px !important;
+    }
+
+    /* 4. 保留你原本設定的內容 */
+    .hero h1 { font-size: 32px; }
+    .home-btn-group { margin-top: 40px; }
+    .side-nav { display: none; }
+    .floating-contact-bar { 
+        display: flex !important; /* 確保它會出現 */
+        flex-direction: row; 
+        bottom: 0; right: 0; left: 0; 
+        background: #fff; padding: 10px; 
+        justify-content: center; gap: 40px; width: 100%; 
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo" onclick="switchPage('home')">
+                <img src="logo.png" alt="名韋油封">
+                <span>名韋油封</span>
+            </a>
+            <nav class="nav-menu">
+                <a onclick="switchPage('home')" id="nav-home" class="active">首頁</a>
+                <a onclick="switchPage('oil')" id="nav-oil">產品列表</a>
+                <a onclick="switchPage('air')" id="nav-air">修理包</a>
+                <a href="" class="lang-btn">English</a> 
+                <a href="https://qr-official.line.me/gs/M_915kquls_GW.png?oat_content=qr" target="_blank" class="cta-btn">LINE 洽詢</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="page-home" class="page-content active">
+        <section
+  class="hero"
+  style="background-image: url('bg1.png');"
+>
+            <div class="container">
+                <h1>專業油封供應</h1>
+                <p>提供穩定可靠的密封解決方案，適用於各類機械設備與工業應用</p>
+                <div class="home-btn-group">
+                    <button onclick="switchPage('oil')" class="hero-btn">產品列表</button>
+                    <button onclick="switchPage('air')" class="hero-btn">修理包</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main id="page-oil" class="page-content">
+        <section class="hero" style="background-image: linear-gradient(rgba(15, 28, 46, 0.3), rgba(15, 28, 46, 0.1)), url('bg1.png');">
+            <div class="container">
+                <h1>產品列表</h1>
+            </div>
+        </section>
+        <div class="container"><div id="oil-grid" class="product-grid"></div></div>
+        <div id="oil-detail" class="container"></div>
+    </main>
+
+    <main id="page-air" class="page-content">
+        <section class="hero" style="background-image: linear-gradient(rgba(15, 28, 46, 0.3), rgba(15, 28, 46, 0.1)), url('bg1.png');">
+            <div class="container">
+                <h1>修理包</h1>
+            </div>
+        </section>
+        <div class="container"><div id="air-grid" class="product-grid"></div></div>
+        <div id="air-detail" class="container"></div>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand"><img src="logo.png" alt="名韋油封"><h3>名韋油封</h3></div>
+                    <p>我們專營油封及各式油壓相關零件，有具備專業及熱情的工作團隊為顧客解決各種油封零件問題。歡迎索取實體型錄或來電洽詢。</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="simple-title">聯絡資訊</h3>
+                    <ul class="contact-info">
+                        <li><span>📍</span> 彰化縣秀水鄉彰水路一段851號</li>
+                        <li><span>📞</span> 04-7625976</li>
+                        <li><span>📠</span> 04-7620743</li>
+                        <li><span>✉️</span> tks195@yahoo.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="simple-title">快速連結</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">電子型錄 (互動版)</a></li>
+                        <li><a href="#">LINE 官方帳號</a></li>
+                        <li><a href="#">產品分類</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright"><p>© 2026 名韋企業社. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <nav id="side-menu" class="side-nav"></nav>
+
+    <div class="floating-contact-bar">
+        <a href="tel:04-7625976" class="float-btn btn-phone">
+            <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1.01A11.36 11.36 0 0 1 8.59 3.99C8.59 3.44 8.14 3 7.59 3H4.03C3.48 3 3 3.45 3 4.01 3 13.39 10.61 21 20 21c.55 0 1-.45 1-1v-3.62c0-.55-.45-1-1-1z"/></svg>
+        </a>
+        <a href="mailto:tks195@yahoo.com" class="float-btn btn-mail">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+        <a href="https://qr-official.line.me/gs/M_915kquls_GW.png?oat_content=qr" target="_blank" class="float-btn btn-line">
+            <svg viewBox="0 0 100 100" style="width: 38px; height: 38px;"><path fill="#ffffff" d="M10,35 v30 h20 v-8 h-12 v-22 z M35,35 v30 h8 v-30 z M48,35 v30 h8 v-18 l12,18 h8 v-30 h-8 v18 l-12,-18 z M80,35 v30 h20 v-8 h-12 v-4 h10 v-7 h-10 v-4 h12 v-7 z" /></svg>
+        </a>
+    </div>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modalImg" src="" style="max-width: 100%; max-height: 80vh; object-fit: contain;">
+            <div id="modalTitle" style="text-align: center; padding: 10px; font-weight: 900; color: #333;"></div>
+        </div>
+    </div>
+
+    <script>
+        // --- 產品列表資料清單 ---
+        const oilCats = [
+            { id: 'a', name: '雙用油封', count: 9 },
+            { id: 'b', name: '軸心油封', count: 5 },
+            { id: 'c', name: '活塞油封', count: 15 },
+            { id: 'd', name: '防塵油封', count: 11 },
+            { id: 'e', name: '緩衝油封', count: 5 },
+            { id: 'f', name: 'O-RING', count: 6 },
+            { id: 'g', name: '背拖環', count: 3 },
+            { id: 'h', name: '旋轉油封', count: 3 },
+            { id: 'i', name: '軸承', count: 4 },
+            { id: 'j', name: '耐磨環', count: 4 },
+            { id: 'k', name: '油壓零件', count: 7 },
+        ];
+
+        const oilDescriptions = {
+           'a1': 'USH', 
+            'a2': 'UPH',
+            'a3': 'UPI',
+            'a4': 'USI',
+            'a5': 'UHS', 
+            'a6': 'UN', 
+            'a7': 'SKY', 
+            'a8': '601', 
+            'a9': 'AUS(空壓)',
+ 
+	    'b1': 'ISI', 
+            'b2': 'IDI',
+            'b3': '605', 
+            'b4': 'TSE', 
+            'b5': 'NCR', 
+
+            'c1': 'OSI', 
+            'c2': 'ODI',
+            'c3': 'TPM',
+            'c4': 'TDE',
+            'c5': 'TPS/T',
+            'c6': 'H780',
+            'c7': 'T058',
+            'c8': '754',
+            'c9': 'NPS',
+            'c10': 'CT',
+            'c11': 'GPY',
+            'c12': 'HSD',
+            'c13': 'RGU',
+            'c14': 'APA(空壓)',
+            'c15': 'APP(空壓)',
+
+            'd1': 'LBH',
+            'd2': 'DSI ',
+            'd3': 'DH',
+	    'd4': 'SCK',
+	    'd5': 'DHB',
+	    'd6': 'DKB',
+	    'd7': 'DKBI',
+	    'd8': 'RCM',
+	    'd9': 'ADH(空壓)',
+	    'd10': 'EU8(空壓)',
+	    'd11': 'PDU(空壓)',
+
+            'e1': 'HBY',
+            'e2': 'K-TYPE',
+            'e3': 'DR(空壓) ',
+            'e4': 'CTU(空壓)',
+            'e5': 'PEI(空壓)',
+
+	    'f1': 'G規格',
+            'f2': 'P規格',
+            'f3': 'AS規格',
+            'f4': 'JASO規格',
+            'f5': '其他規格',
+            'f6': 'X型環',
+
+            'g1': 'G規格',
+            'g2': 'P規格',
+            'g3': '其他規格',
+ 
+            'h1': 'TC',
+            'h2': 'TCV',
+            'h3': 'CFW',
+
+            'i1': 'DU',
+            'i2': 'BF',
+            'i3': '雙金屬',
+            'i4': 'SPB',
+           
+            'j1': '電木',
+            'j2': 'POM',
+            'j3': '506耐磨片',
+            'j4': 'UTR紅銅色耐磨片',
+
+	    'k1': '壓力錶',
+	    'k2': '油壓計',
+            'k3': '球閥',
+            'k4': '快速接頭',
+            'k5': '濾油網',
+            'k6': '過濾器',
+	    'k7': '塑膠塞頭',
+        };
+
+        // --- 銷售品牌資料清單 ---
+        const airCats = [
+            { id: 'sw-a', name: '吊車', count: 9 },
+            { id: 'sw-b', name: '堆高機', count: 3 },
+            { id: 'sw-c', name: '山貓', count: 4 },
+            { id: 'sw-d', name: '怪手', count: 6 },
+            { id: 'sw-e', name: '高空車', count: 2 },
+        ];
+
+        const airDescriptions = {
+            'sw-a1': 'GW ',
+            'sw-a2': 'UNIC',
+            'sw-a3': '南星',
+            'sw-a4': 'TADANO',
+            'sw-a5': '水山',
+            'sw-a6': '廣林',
+            'sw-a7': '東洋',
+            'sw-a8': '現代',
+            'sw-a9': 'HIAB',
+            'sw-b1': 'TOYOTA',
+            'sw-b2': 'TCM',
+            'sw-b3': '三菱',
+            'sw-c1': 'TCM',
+            'sw-c2': '久保田',
+            'sw-c3': 'CASE',
+            'sw-c4': 'FORD',
+            'sw-d1': '日立',
+            'sw-d2': '小松',
+            'sw-d3': '神岡',
+            'sw-d4': '久保田',
+            'sw-d5': 'SUMITOMO',
+            'sw-d6': 'CAT',
+            'sw-e1': 'JLG',
+            'sw-e2': 'GENIE',
+        };
+
+        // --- 功能邏輯 ---
+
+        function switchPage(id) {
+            document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.nav-menu a').forEach(a => a.classList.remove('active'));
+            document.getElementById('page-' + id).classList.add('active');
+            if(document.getElementById('nav-' + id)) document.getElementById('nav-' + id).classList.add('active');
+            
+            const sm = document.getElementById('side-menu');
+            sm.innerHTML = '';
+            if(id === 'home') {
+                sm.style.display = 'none';
+            } else {
+                sm.style.display = 'flex';
+                (id === 'oil' ? oilCats : airCats).forEach(c => {
+                    sm.innerHTML += `<a href="#${id}-sec-${c.id}">${c.name}</a>`;
+                });
+            }
+            window.scrollTo(0,0);
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.remove('show');
+            setTimeout(() => { document.getElementById('imageModal').style.display = 'none'; }, 300);
+        }
+
+        function openModal(src, title) {
+            const img = document.getElementById('modalImg');
+            const tit = document.getElementById('modalTitle');
+            const sizeSrc = src.replace('.png', '-size.png');
+            img.src = sizeSrc;
+            tit.innerText = title + ' (尺寸圖)';
+            img.onerror = () => { img.src = src; tit.innerText = title; };
+            document.getElementById('imageModal').style.display = 'flex';
+            setTimeout(() => { document.getElementById('imageModal').classList.add('show'); }, 10);
+        }
+
+        // 渲染產品列表
+          const mg = document.getElementById('oil-grid');
+        const md = document.getElementById('oil-detail');
+        
+        oilCats.forEach(c => {
+            // ★★★ 這裡是控制「最上方圖片超連結」的地方 ★★★
+            // 修正重點：把原本複雜的判斷拿掉，直接改成 ${c.id}1.png
+            // 這樣 g 類別就會乖乖去抓 g1.png，而不是 g7.png
+            mg.innerHTML += `
+                <div class="product-card" onclick="location.href='#oil-sec-${c.id}'">
+                    <div class="card-img">
+                        <img src="${c.id}/${c.id}1.png" onerror="this.src='logo.png'">
+                    </div>
+                    <div class="card-content">
+                        <h3>${c.name}</h3>
+                    </div>
+                </div>`;
+            
+            // ★★★ 這裡是控制「下方產品細節欄位」的地方 (這部分你原本就是好的) ★★★
+            let items = '';
+            for(let i=1; i<=c.count; i++) {
+                let id = `${c.id}${i}`;
+                let desc = oilDescriptions[id] || id;
+                items += `<div class="item-card" onclick="openModal('${c.id}/${id}.png', '${desc}')">
+                            <img src="${c.id}/${id}.png" onerror="this.src='logo.png'">
+                            <div class="item-desc">${desc}</div>
+                          </div>`;
+            }
+            md.innerHTML += `<div id="oil-sec-${c.id}" class="detail-section"><div class="detail-header"><h3>${c.name}</h3></div><div class="items-grid">${items}</div></div>`;
+        });
+
+        // 渲染銷售品牌
+        const eg = document.getElementById('air-grid');
+        const ed = document.getElementById('air-detail');
+        airCats.forEach(c => {
+            eg.innerHTML += `<div class="product-card" onclick="location.href='#air-sec-${c.id}'"><div class="card-img"><img src="${c.id}/${c.id}0.png" onerror="this.src='logo.png'"></div><div class="card-content"><h3>${c.name}</h3></div></div>`;
+            let items = '';
+            for(let i=1; i<=c.count; i++) {
+                let id = `${c.id}${i}`;
+                let desc = airDescriptions[id] || id;
+                items += `<div class="item-card" onclick="openModal('${c.id}/${id}.png', '${desc}')"><img src="${c.id}/${id}.png" onerror="this.src='logo.png'"><div class="item-desc">${desc}</div></div>`;
+            }
+            ed.innerHTML += `<div id="air-sec-${c.id}" class="detail-section"><div class="detail-header"><h3>${c.name}</h3></div><div class="items-grid">${items}</div></div>`;
+        });
+
+        window.addEventListener('scroll', () => {
+            document.body.classList.toggle('show-floating-ui', window.scrollY > 400);
+        });
+    </script>
+</body>
+
+</html>
+
+
+
